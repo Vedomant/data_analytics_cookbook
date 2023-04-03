@@ -5,3 +5,4 @@
 
 Полностью посмотреть команды и примеры для:
 * [GIT](https://github.com/Vedomant/data_analytics_cookbook/blob/4ef2fb776c15b15476178a42fbe2d10f6a717d6d/GIT/GIT.md);
+* [SQL](https://github.com/Vedomant/data_analytics_cookbook/blob/305e104f2ac00ba9d1c1a0dda1fa8645f0ca56a3/SQL/SQL.md);

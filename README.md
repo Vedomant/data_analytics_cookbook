@@ -6,4 +6,4 @@
 Полностью посмотреть команды и примеры для:
 * [GIT](GIT/GIT.md);
 * [SQL](SQL/SQL.md);
-* [Python](https://github.com/Vedomant/data_analytics_cookbook/blob/049a7d2707626aeea7af91619d4bd5167bfd3486/Python/Python.md).
+* [Python](Python/Python.md).

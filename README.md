@@ -5,5 +5,5 @@
 
 Полностью посмотреть команды и примеры для:
 * [GIT](GIT/GIT.md);
-* [SQL](https://github.com/Vedomant/data_analytics_cookbook/blob/305e104f2ac00ba9d1c1a0dda1fa8645f0ca56a3/SQL/SQL.md);
+* [SQL](SQL/SQL.md);
 * [Python](https://github.com/Vedomant/data_analytics_cookbook/blob/049a7d2707626aeea7af91619d4bd5167bfd3486/Python/Python.md).

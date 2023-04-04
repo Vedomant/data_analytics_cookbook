@@ -44,6 +44,9 @@
 `import gspread`
 > импортирует библиотеку для работы с Google Sheets
 
+`import zipfile`
+> импортирует модуль, который предоставляет функции для работы с архивами ZIP в Python
+
 `from io import BytesIO`
 > импортирует модуль для работы с бинарными данными в памяти
 
@@ -104,7 +107,7 @@
 
 ### Импорт данных
 
-`df = pd.read_csv('C:\\temp\\example.csv')`<br>
+`df = pd.read_csv('C:\\temp\\example.csv')`<br><br>
 `df2 = pd.read_csv('C:\\temp\\example2.csv', parse_dates=['date'],  sep=';', dayfirst=True)`
 > импорт с локального диска и сохранение файла в датафрейм, во втором примере указан парсинг дат, указан разделитель и формат времени dd/mm/yyyy
 
@@ -115,17 +118,51 @@
 `}`<br>
 
 `q =`<br> 
+```
     '''
-    SELECT
-        DISTINCT (host_id) as host_id,
-        host_verifications
+    SELECT *
     FROM
-        {db}.ldn_listings
+        {db}.table
     WHERE
-        experiences_offered != 'none'
-    '''
+        id != 'none'
+    ''' 
+```
 `df = ph.read_clickhouse(query=q, connection=connection_default)`
->
+> SQL запрос в Python через CLICKHOUSE в пандас (нужно подставить link, заменить звездочки учетными данными, верно указать базу данных и написать корректный запрос)
+
+`df = pd.read_csv('C:\\temp\\data.csv.zip',  compression='zip')`<br><br>
+`with zipfile.ZipFile('C:\\temp\\data2.csv.zip') as myzip:`<br>
+    `with myzip.open('data2.csv') as myfile:`<br>
+        `df2 = pd.read_csv(myfile, encoding='ISO-8859-1')`
+> импорт в датасет csv файла, а во втором случае импорт конкретного csv файла в архиве
+
+`df = np.genfromtxt('C:\\temp\\data.txt', dtype=None)`<br>
+`pd.DataFrame(df)`
+> загружает данные из txt файла в виде массива numpy и создает датасет с этими данными
+
+`df = pd.read_excel('C:\\temp\\data.xls')`
+> загружает данные из excel файла в виде массива numpy и создает датасет с этими данными
+
+`df = pd.read_csv('link', sep=";")`
+> загружает файл csv по ссылке
+
+`def download(link, df):`<br>
+    `   base_url = 'link'`<br>
+    `   final_url = base_url + urlencode(dict(public_key=link))`<br>
+    `   response = requests.get(final_url)`<br>
+    `   download_url_file = response.json()['href']`<br>
+    `   file_df = pd.read_csv(download_url_file)`<br>
+    `   pattern = r'[;,|\t]'`<br>
+    `   pattern_test = re.search(pattern, file_df.columns[0])`<br>
+    `   if pattern_test is not None:`<br>
+        `       sep = pattern_test[0]`<br>
+        `       file_df = pd.read_csv(download_url_file, delimiter=None, sep=sep, parse_dates=True)`<br>
+    `   globals()[df] = file_df`
+> функция для загрузки файлов с ЯндексДиска (заполнить link)
+
+`filename = 'C:\\temp\\data.csv'<br>
+`df.to_csv(filename)`
+> сохраняет датасет в csv файл
 
 ### Экспорт данных
 

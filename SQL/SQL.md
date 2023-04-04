@@ -88,3 +88,22 @@ CREATE TABLE IF NOT EXISTS database_name.table_name (
     column_4 String
     ) 
 ```
+#### ПОДЧИНЕННЫЕ ТАБЛИЦЫ
+
+В подчиненной таблице можно настроить, какие действия должны выполняться при удалении связанной строки из главной таблицы.<br> Доступны четыре опции:
+
+CASCADE:<br> автоматически удаляет все связанные строки в подчиненной таблице при удалении строки из главной таблицы.<br>
+SET NULL:<br> при удалении связанной строки из главной таблицы устанавливает значение NULL для соответствующего столбца в подчиненной таблице. Для этого столбца должна быть разрешена возможность принимать значение NULL.<br>
+SET DEFAULT:<br> при удалении связанной строки из главной таблицы устанавливает значение по умолчанию для соответствующего столбца в подчиненной таблице.<br>
+RESTRICT:<br> запрещает удаление строки из главной таблицы, если на нее ссылаются строки в подчиненной таблице.<br>
+```
+CREATE TABLE primary (
+    id INT PRIMARY KEY AUTO_INCREMENT, 
+    name VARCHAR(50) NOT NULL, 
+    personal_number INT NOT NULL,
+    phone_number INT,
+    salary DECIMAL(8,2), 
+    FOREIGN KEY (name)  REFERENCES secondary (name) ON DELETE CASCADE,
+    FOREIGN KEY (id, salary)  REFERENCES secondary (primary_id, salary) ON DELETE SET NULL
+);
+```

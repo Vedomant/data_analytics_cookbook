@@ -7,5 +7,5 @@
 * [GIT](GIT/GIT.md);
 * [SQL](SQL/SQL.md);
 * [Python](Python/Python.md):
-  * [Импорт библиотек](Python/Python.md#import-libraries);
-  * [Файловая система, импорт/экспорт данных](Python/Python.md#file-system);
+  * [Импорт библиотек](#import);
+  * [Файловая система, импорт/экспорт данных](#file);

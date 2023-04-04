@@ -7,4 +7,4 @@
 * [GIT](GIT/GIT.md);
 * [SQL](SQL/SQL.md);
 * [Python](Python/Python.md):
-  * [Импорт библиотек](#import-libraries);
+  * [Импорт библиотек](Python.md#import-libraries);

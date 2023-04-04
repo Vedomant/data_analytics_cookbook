@@ -94,3 +94,39 @@
 
 `from my_module import my_function`
 > содержит функцию или библиотеку функций, специфичных для проекта, над которым работает конкретный автор
+
+## Файловая система, импорт/экспорт данных
+
+### Файловая система
+
+`[x[0] for x in os.walk('my_directory')]`
+> выводит список всех папок внутри папки 'my_directory' (включая подпапки)
+
+### Импорт данных
+
+`df = pd.read_csv('C:\\temp\\example.csv')`<br>
+`df2 = pd.read_csv('C:\\temp\\example2.csv', parse_dates=['date'],  sep=';', dayfirst=True)`
+> импорт с локального диска и сохранение файла в датафрейм, во втором примере указан парсинг дат, указан разделитель и формат времени dd/mm/yyyy
+
+`connection_default = {'host': 'link',`<br>
+`'database':'default',`<br>
+`'user':'******',`<br>
+`'password':'******'`<br>
+`}`<br>
+
+`q =`<br> 
+    '''
+    SELECT
+        DISTINCT (host_id) as host_id,
+        host_verifications
+    FROM
+        {db}.ldn_listings
+    WHERE
+        experiences_offered != 'none'
+    '''
+`df = ph.read_clickhouse(query=q, connection=connection_default)`
+>
+
+### Экспорт данных
+
+

@@ -10,3 +10,4 @@
   * [Импорт библиотек](Python/Python.md#import);
   * [Файловая система, импорт/экспорт данных](Python/Python.md#file);
   * [Работа со строками](Python/Python.md#string);
+  * [Работа со списками](Python/Python.md#list);

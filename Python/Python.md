@@ -363,16 +363,15 @@
 `mix = [1, 'house', 3.45]`
 
 `for num, word in zip(numbers, words):`<br>
-    `print(f"{num} {word}")`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`print(f"{num} {word}")`<br>
 `1 house`<br>
 `5 worm`<br>
 `10 sex`<br>
 > использована функция zip() для создания итератора, который позволяет проходить по двум спискам одновременно
 
-
 `result = 1`<br>
 `for i in range(0,len(numbers)):`<br>
-    `result = result * numbers[i]`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`result = result * numbers[i]`<br>
 `print(result)`<br>
 `62500`
 > перемножает все числа в списке "numbers" по очереди и сохраняет результат в переменной "result"
@@ -382,18 +381,18 @@
 > выведет список, содержащий тип каждого элемента списка
 
 `if len(set(numbers)) == 1:`<br>
-    `print('YES')`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`print('YES')`<br>
 `else:`<br>
-    `print('NO')`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`print('NO')`<br>
 `NO`<br>
 > код проверяет, все ли элементы списка numbers равны между собой
 
 `n = int(input())`<br>
 `counter = []`<br>
 `while n != 0:`<br>
-    `last_digit = n % 10`<br>
-    `n = n // 10`<br>
-    `counter.append(last_digit)`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`last_digit = n % 10`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`n = n // 10`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`counter.append(last_digit)`<br>
 `counter.reverse()`<br>
 `print(counter)`<br>
 > выводит список цифр введенного пользователем числа в порядке от первой цифры до последней, и для числа 456 результатом будет [4, 5, 6]

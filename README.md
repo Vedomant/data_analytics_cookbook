@@ -5,7 +5,8 @@
 
 Полностью посмотреть команды и примеры для:
 * [GIT](GIT/GIT.md);
-* [SQL](SQL/SQL.md);
+
+* [SQL](SQL/SQL.md);<br>
 * [Python](Python/Python.md):
   * [Импорт библиотек](Python/Python.md#import);
   * [Файловая система, импорт/экспорт данных](Python/Python.md#file);

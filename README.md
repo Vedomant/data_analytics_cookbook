@@ -13,3 +13,4 @@
   * [Работа со строками](Python/Python.md#string);
   * [Работа со списками](Python/Python.md#list);
   * [Работа с датафреймами](Python/Python.md#pandas);
+  * [Статистические методы в Python](Python/Python.md#statistics);

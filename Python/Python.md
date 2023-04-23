@@ -717,7 +717,7 @@
 `margin_of_error = t_critical * standard_error`<br>
 `# рассчитываем доверительный интервал`<br>
 `confidence_interval = (sample_mean - margin_of_error, sample_mean + margin_of_error)`<br>
-`print("Доверительный интервал для t - распределения: ", confidence_interval)`
+`print("Доверительный интервал для t - распределения: ", confidence_interval)`<br>
 `Доверительный интервал для t - распределения:  (84.61143720745503, 95.18856279254499)`
 > $$CI = \bar{x} \pm t_{\frac{\alpha}{2},n-1}\frac{s}{\sqrt{n}}$$
 > где $\bar{x}$ - среднее значение выборки, $t_{\frac{\alpha}{2},n-1}$ - критическое значение t-распределения с $\frac{\alpha}{2}$ уровнем значимости и $n-1$ степенями свободы (где $\alpha$ - уровень значимости), $s$ - стандартное отклонение выборки, $n$ - размер выборки

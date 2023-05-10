@@ -500,9 +500,10 @@
 ##### Логарифмы
 
 ###### Натуральный логарифм
-<pre>
-ln_X = math.log(X, math.e)
-</pre>
+`ln_x = math.log(x, math.e)`
+
+###### Экспонента
+`exp_x = math.exp(x)`
 
 ## <a name="statistics">Статистические методы в Python</a>
 

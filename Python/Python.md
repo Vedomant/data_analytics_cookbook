@@ -505,6 +505,18 @@
 ###### Экспонента
 `exp_x = math.exp(x)`
 
+###### Логарифмирование значений столбца датасета:
+`df = np.log(df.view)`
+
+##### Среднее
+`df_mean = df.mean()`
+
+###### Скользящее среднее
+`df_rolling_mean = df.rolling(window=2).mean()`
+
+###### Экспоненциальное скользящее среднее:
+`df_ewm_rolling_mean = df.ewm(span=2).mean()`
+
 ## <a name="statistics">Статистические методы в Python</a>
 
 Содержание:<br>

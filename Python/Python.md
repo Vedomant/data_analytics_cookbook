@@ -405,6 +405,8 @@
 
 ## <a name="pandas">Работа с датафреймами (Pandas / NumPy)</a>
 
+`pd.Series(['One','Two','Three'])`
+> cоздает Series из списка
 
 `df = pd.DataFrame()`
 > cоздает пустой датафрейм

@@ -432,8 +432,11 @@
 `df.columns = df.columns.str.replace('[.]', '_').str.replace('[ ]', '').lower()`
 > переименовывает столбец в датасете, удаляя "лишние" символы и переводит к нижнему регистру
 
-`df = df.drop(['column_1','column_2'], axis=1)`
-`df = df.loc[:,('column_1', 'column_4', 'column_7')]`
+`df[['One', 'Two', 'Three']]`
+> выводит три столбца датафрейма df в виде датафрейма
+
+`df = df.drop(['column_1','column_2'], axis=1)`<br>
+`df = df.loc[:,('column_1', 'column_4', 'column_7')]`<br>
 `df = df.drop(columns=df.columns[0])`
 > удаление столбцов в датасете:<br> первый - удаляет указанные столбцы;<br> второй - удаляет все столбцы, кроме указанных;<br> третий - удаляет столбцы по индексу
 

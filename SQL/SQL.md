@@ -47,6 +47,15 @@ SELECT CONCAT('SQL', ' ', 'Simulator ', 2022)
 -- принимает на вход несколько аргументов и возвращает результат их последовательного сложения друг с другом
 ```
 
+### ФУНКЦИИ
+```
+CASE  
+WHEN logical_expression_1 THEN expression_1
+WHEN logical_expression_2 THEN expression_2
+...
+ELSE expression_else
+END AS case_example
+```
 
 ### ФУНКЦИИ ДЛЯ РАБОТЫ С ЧИСЛАМИ
 

@@ -123,3 +123,19 @@ CREATE TABLE primary (
     FOREIGN KEY (id, salary)  REFERENCES secondary (primary_id, salary) ON DELETE SET NULL
 );
 ```
+### ОБЪЕДИНЕНИЕ ТАБЛИЦ и ЗАПРОСОВ
+
+#### ОБЪЕДИНЕНИЕ ЗАПРОСОВ
+```
+select column_1, column_2
+from table_1
+union
+select column_1, column_2
+from table_2<br>
+-- объединяет результаты двух запросов из двух разных таблиц в один результат:
+-- всего могут быть следующие варианты:
+-- union: вывод уникальных значений;
+-- union all: вывод всех значений;
+-- except: вывод значений в верхней таблице, которые отсутствуют в нижней;
+-- intersect: вывод значений обеих таблиц
+```

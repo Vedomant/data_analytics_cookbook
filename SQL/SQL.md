@@ -145,7 +145,8 @@ WITH RECURSIVE temp_table AS (
     SELECT * FROM table WHERE column_1 = 2020
     UNION
     SELECT table.* FROM table
-    JOIN temp_table ON table.column_1 = temp_table.column_1 OR table.column_2 = temp_table.column_2 OR table.column_3 = temp_table.column_3)
+    JOIN temp_table ON table.column_1 = temp_table.column_1 
+        OR table.column_2 = temp_table.column_2 OR table.column_3 = temp_table.column_3)
     SELECT DISTINCT * FROM temp_table;
 -- данный запрос находит все строки из таблицы table, 
 -- которые имеют совпадения по column_1, column_2 или column_3 с любой строкой, 

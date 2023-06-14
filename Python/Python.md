@@ -96,6 +96,13 @@
 `from df2gspread import df2gspread as d2g`
 > функция используется для экспорта данных из pandas DataFrame в Google Sheets
 
+`import psycopg2`
+> модуль, который позволяет взаимодействовать с базой данных PostgreSQL из Python
+
+`import warnings`
+> модуль, который позволяет управлять выводом предупреждений во время выполнения программы. Например, так:<br>
+> warnings.filterwarnings('ignore')
+
 `from oauth2client.service_account import ServiceAccountCredentials`
 > используется для аутентификации в Google API с помощью учетных данных службы
 

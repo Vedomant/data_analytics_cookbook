@@ -1,6 +1,5 @@
 # Python
 
-
 ## <a name="import">Импорт библиотек</a>
 
 `import pandas as pd`

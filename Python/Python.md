@@ -180,6 +180,13 @@
 `df.to_csv(filename)`
 > сохраняет датасет в csv файл
 
+`with pd.ExcelWriter('northwind_data.xlsx') as writer:`<br>
+`   users_df.to_excel(writer, sheet_name='Users', index=False)`<br>
+`   purchases_df.to_excel(writer, sheet_name='Purchases', index=False)`<br>
+`   items_df.to_excel(writer, sheet_name='Items', index=False)`
+> сохраняет датасеты в один excel файл, датасеты сохраняются на разные листы
+
+
 ## <a name="string">Работа со строками</a>
 
 `S1 + S2` 

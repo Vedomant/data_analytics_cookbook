@@ -113,6 +113,13 @@ SELECT COALESCE(column, 'filler value')
 | %     | строка, содержащая ноль или более символов      | SELECT * FROM list WHERE names LIKE '%П.М.%'<br>ищет все имена с инициалами П.М.     |
 | _     | любой одиночный символ      | SELECT * FROM list WHERE names LIKE '_____'<br>ищет все имена состоящие из пяти любых символов     |
 
+#### НЮАНСЫ АГРЕГАЦИИ
+```
+SELECT agg_function(column) FILTER (WHERE condition)
+-- агрегирующей функции на вход будут поданы только те строки, для которых условие фильтра окажется истинным
+
+```
+
 ### СОЗДАНИЕ И ИЗМЕНЕНИЕ ТАБЛИЦ
 ```
 CREATE TABLE IF NOT EXISTS database_name.table_name ( 

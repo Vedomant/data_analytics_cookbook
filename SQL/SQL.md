@@ -117,7 +117,6 @@ SELECT COALESCE(column, 'filler value')
 ```
 SELECT agg_function(column) FILTER (WHERE condition)
 -- агрегирующей функции на вход будут поданы только те строки, для которых условие фильтра окажется истинным
-
 ```
 
 ### СОЗДАНИЕ И ИЗМЕНЕНИЕ ТАБЛИЦ

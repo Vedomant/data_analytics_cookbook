@@ -11,6 +11,7 @@
   * [Файловая система, импорт/экспорт данных](Python/Python.md#file);
   * [Работа со строками](Python/Python.md#string);
   * [Работа со списками](Python/Python.md#list);
+  * [Работа с множествами](Python/Python.md#set);
   * [Работа с датафреймами](Python/Python.md#pandas);
   * [Математические методы в Python](Python/Python.md#math);
   * [Статистические методы в Python](Python/Python.md#statistics);

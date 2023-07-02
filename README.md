@@ -12,6 +12,7 @@
   * [Работа со строками](Python/Python.md#string);
   * [Работа со списками](Python/Python.md#list);
   * [Работа с множествами](Python/Python.md#set);
+  * [Списочные выражения и функции для работы с множествами](Python/Python.md#func);
   * [Работа с датафреймами](Python/Python.md#pandas);
   * [Математические методы в Python](Python/Python.md#math);
   * [Статистические методы в Python](Python/Python.md#statistics);

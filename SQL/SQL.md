@@ -197,6 +197,15 @@ WITH RECURSIVE temp_table AS (
 ```
 ### ОКОННЫЕ ФУНКЦИИ
 
+#### СИНТАКСИС ОКОННЫХ ФУНКЦИЙ
+```
+OVER (
+     PARTITION BY column_1, column_2, ...    -- определяются партиции внутри окна (аналог GROUP BY) 
+     ORDER BY column_3, ...    -- указывается сортировка записей в партициях
+     ROWS/RANGE BETWEEN ...    -- задаются границы окна
+)
+```
+
 #### АНАЛОГ ОКОННОЙ ФУНКЦИИ
 ```
 SELECT DISTINCT ON (email) name, email

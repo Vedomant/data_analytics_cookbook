@@ -510,10 +510,10 @@
 `df.columns = [x.lower() for x in df.columns]`
 > приводит все названия столбцов к нижнему регистру
 
-`df = df.rename(columns={'x': 'name', 'y': 'new_name'})`
-> переименовывает столбец в датасете
+`df.rename(columns={'x': 'name', 'y': 'new_name'}, inplace=True)`
+> переименовывает столбцы в датасете
 
-`df = df.rename(columns={df.columns[0]:"new_column_name"})`
+`df.rename(columns={df.columns[0]:"new_column_name"}, inplace=True)`
 > переименовывает столбец в датасете по индексу
 
 `df.columns = df.columns.str.replace('[.]', '_').str.replace('[ ]', '').lower()`

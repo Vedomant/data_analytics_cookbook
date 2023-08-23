@@ -264,3 +264,8 @@ SET column = "new_value"
 WHERE column = "old_value";
 -- запрос изменяет значение в таблице по условию, указанному в where
 ```
+```
+DELETE FROM Table
+WHERE column = "old_value";
+-- запрос удаляет строки в таблице по условию, указанному в where
+```

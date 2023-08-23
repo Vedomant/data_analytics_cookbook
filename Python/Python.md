@@ -516,6 +516,9 @@
 `df.rename(columns={df.columns[0]:"new_column_name"}, inplace=True)`
 > переименовывает столбец в датасете по индексу
 
+`df.reindex(columns=['column_1, 'column_2', 'column_3'], inplace=True)`
+> меняет индекс столбцов в датасете
+
 `df.columns = df.columns.str.replace('[.]', '_').str.replace('[ ]', '').lower()`
 > переименовывает столбец в датасете, удаляя "лишние" символы и переводит к нижнему регистру
 

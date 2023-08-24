@@ -144,6 +144,12 @@ SELECT column_1, agg_function(column_2) FILTER (WHERE condition)
 | %     | строка, содержащая ноль или более символов      | SELECT * FROM list WHERE names LIKE '%П.М.%'<br>ищет все имена с инициалами П.М.     |
 | _     | любой одиночный символ      | SELECT * FROM list WHERE names LIKE '_____'<br>ищет все имена состоящие из пяти любых символов     |
 
+```
+SELECT * FROM table
+WHERE column LIKE '3!%' ESCAPE '!';
+-- ESCAPE-символ используется для экранирования специальных символов
+```
+
 #### НЮАНСЫ АГРЕГАЦИИ
 ```
 SELECT agg_function(column) FILTER (WHERE condition)

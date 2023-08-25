@@ -187,6 +187,13 @@ CREATE TABLE primary (
 ```
 ### ОБЪЕДИНЕНИЕ ТАБЛИЦ и ЗАПРОСОВ
 
+#### ОБЪЕДИНЕНИЕ ТАБЛИЦ
+```
+SELECT column_1, column_2
+FROM table_1, table_2
+WHERE table_1.column_1 = table_2.column_3
+-- для внутреннего соединения таблиц можно использовать оператор WHERE
+```
 #### ОПЕРАЦИИ С МНОЖЕСТВАМИ
 ```
 select column_1, column_2

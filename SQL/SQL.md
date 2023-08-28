@@ -184,6 +184,11 @@ CREATE TABLE primary (
     FOREIGN KEY (id, salary)  REFERENCES secondary (primary_id, salary) ON DELETE SET NULL
 );
 ```
+### ПОДЗАПРОСЫ
+```
+SELECT 200 > ALL(SELECT column FROM table)
+-- запрос проверяет для всех ли записей выполняется условие, что они меньше чем 200
+```
 ### ОБЪЕДИНЕНИЕ ТАБЛИЦ и ЗАПРОСОВ
 
 #### ОБЪЕДИНЕНИЕ ТАБЛИЦ

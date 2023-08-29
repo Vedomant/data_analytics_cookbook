@@ -91,8 +91,10 @@ WHEN logical_expression_2 THEN expression_2
 ```
 ELSE expression_else
 END AS case_example
--- если logical_expression_1 возвращает истинное значение, то выражение CASE вернёт expression_1, иначе будет сделана проверка на logical_expression_2 и т.д.
--- если ни одно из предложенный условий не будет выполнено, то вернётся NULL или возвращаемое_значение_по_умолчанию, если была использована конструкция ELSE
+-- если logical_expression_1 возвращает истинное значение, то выражение CASE вернёт expression_1,
+-- иначе будет сделана проверка на logical_expression_2 и т.д.
+-- если ни одно из предложенный условий не будет выполнено, то вернётся NULL
+-- или возвращаемое_значение_по_умолчанию, если была использована конструкция ELSE
 ```
 ```
 IF (logical_expression_1, expression_1, expression_2);

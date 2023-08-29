@@ -87,7 +87,8 @@ SUBSTRING()
 CASE  
 WHEN logical_expression_1 THEN expression_1
 WHEN logical_expression_2 THEN expression_2
-...
+```
+```
 ELSE expression_else
 END AS case_example
 -- если logical_expression_1 возвращает истинное значение, то выражение CASE вернёт expression_1, иначе будет сделана проверка на logical_expression_2 и т.д.

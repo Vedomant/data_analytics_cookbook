@@ -633,11 +633,11 @@
 
 ##### QQ-график
 
-`import numpy as np`
-`import statsmodels.api as sm`
-`import matplotlib.pyplot as plt`
-`sm.qqplot(np.array(data), line ='45')`
-`plt.show()`
+`import numpy as np`<br>
+`import statsmodels.api as sm`<br>
+`import matplotlib.pyplot as plt`<br>
+`sm.qqplot(np.array(data), line ='45')`<br>
+`plt.show()`<br>
 > график используется для визуальной оценки соответствия распределения данных нормальному распределению. Он позволяет сравнить квантили выборки с квантилями нормального распределения
 
 ## Методы теории вероятностей в Python

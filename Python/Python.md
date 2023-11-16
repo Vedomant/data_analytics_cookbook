@@ -1,6 +1,5 @@
 # Python
 
-
 ## <a name="import">Импорт библиотек</a>
 
 `import pandas as pd`
@@ -591,6 +590,9 @@
 
 `df = df.drop_duplicates()`
 > удаляет дубликаты
+
+`df = df.sort_values('номер').drop_duplicates(subset=df.columns.difference(['номер']), keep='first')`
+> удаляет дубликаты, если отличаются значения только в одном столбце - оставляется наименьшее значение по данному столбцу
 
 `df.query("name == 'John' and surname == 'Doe'")`
 > выбирает в датасете df все строки, где значение столбца "name" равно "John" и значение столбца "surname" равно "Doe"

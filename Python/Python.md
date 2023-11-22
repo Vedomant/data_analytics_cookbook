@@ -591,7 +591,7 @@
 
 #### Join датасетов
 
-`df_merged = pd.merge(df_1, df_2[['column_1', 'column_2']], left_on=['column_1'], right_on=['column'], how='left'`
+`df_merged = pd.merge(df_1, df_2[['column_1', 'column_2']], left_on=['column_1'], right_on=['column'], how='left')`
 > соединяет два датасета, используя левое соединение, из "правой" таблицы берутся только указанные столбцы
 
 #### Фильтрация данных в датасетах

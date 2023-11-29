@@ -200,14 +200,14 @@
 > оператор, который позволяет упростить запись условных выражений
 
 `match value:`<br>
- ` case <pattern_1>:`<br>
-`    <action_1>`<br>
-`  case <pattern_2>:`<br>
-`    <action_2>`<br>
-`  case <pattern_3>:`<br>
-`    <action_3>`<br>
-`  case _:`<br>
-`    <action_wildcard>`<br>
+`    case <pattern_1>:`<br>
+`        <action_1>`<br>
+`    case <pattern_2>:`<br>
+`        <action_2>`<br>
+`    case <pattern_3>:`<br>
+`        <action_3>`<br>
+`    case _:`<br>
+`        <action_wildcard>`<br>
 > позволяет сопоставлять значения переменных с шаблонами и выполнять определенные действия в зависимости от соответствия шаблону
 
 ## <a name="string">Работа со строками</a>

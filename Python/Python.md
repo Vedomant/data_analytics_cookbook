@@ -328,10 +328,10 @@
 `S.zfill(width)`
 > используется для добавления ведущих нулей в строку S до заданной ширины width
 
-`S.ljust(width, fillchar=" ")`
+`S.ljust(width, 'fillchar')`
 > то же самое, что и предыдущая команда, но заполняет символом fillchar
 
-`S.rjust(width, fillchar=" ")`
+`S.rjust(width, 'fillchar')`
 > то же самое, что и предыдущая команда, но заполняет символом fillchar и выполняется в обратном направлении
 
 `S.partition(sep)`

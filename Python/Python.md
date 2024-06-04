@@ -118,8 +118,8 @@
 
 ### Импорт данных
 
-`df = pd.read_csv('C:\\temp\\example.csv')`<br><br>
-`df2 = pd.read_csv('C:\\temp\\example2.csv', parse_dates=['date'],  sep=';', dayfirst=True)`
+`df = pd.read_csv('C:\\temp\\example.csv')`<br>
+`df2 = pd.read_csv('C:\\temp\\example2.csv', parse_dates=['date'],  sep=';', dayfirst=True)`<br>
 > импорт с локального диска и сохранение файла в датафрейм, во втором примере указан парсинг дат, указан разделитель и формат времени dd/mm/yyyy
 
 `connection_default = {'host': 'link',`<br>
@@ -180,7 +180,7 @@
 ### Экспорт данных
 
 `filename = 'C:\\temp\\data.csv'<br>
-`df.to_csv(filename)`
+`df.to_csv(filename)`<br>
 > сохраняет датасет в csv файл
 
 `with pd.ExcelWriter('northwind_data.xlsx') as writer:`<br>

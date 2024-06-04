@@ -179,7 +179,7 @@
 
 ### Экспорт данных
 
-`filename = 'C:\\temp\\data.csv'<br>
+`filename = 'C:\\temp\\data.csv`<br>
 `df.to_csv(filename)`<br>
 > сохраняет датасет в csv файл
 

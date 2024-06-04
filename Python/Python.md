@@ -118,7 +118,7 @@
 
 ### Импорт данных
 
-`df = pd.read_csv('C:\\temp\\example.csv')`<br>
+`df = pd.read_csv('C:\\temp\\example.csv', dtype={'column_1': int})`<br>
 `df2 = pd.read_csv('C:\\temp\\example2.csv', parse_dates=['date'],  sep=';', dayfirst=True)`<br>
 > импорт с локального диска и сохранение файла в датафрейм, во втором примере указан парсинг дат, указан разделитель и формат времени dd/mm/yyyy
 

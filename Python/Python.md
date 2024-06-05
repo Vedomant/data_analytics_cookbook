@@ -179,8 +179,7 @@
 
 ### Экспорт данных
 
-`filename = 'C:\\temp\\data.csv`<br>
-`df.to_csv(filename)`<br>
+`df.to_csv('df.csv', sep=',', index=False)`
 > сохраняет датасет в csv файл
 
 `with pd.ExcelWriter('northwind_data.xlsx') as writer:`<br>

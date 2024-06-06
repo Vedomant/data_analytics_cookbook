@@ -780,8 +780,8 @@
 ##### Создание классов
 
 `class Book:`<br>
-`    def __init__(self, color):  # self - сам объект, который будет создан`<br>
-`        self.color = color  # создаваемому объекту задаем переменную color`<br>
+`    def __init__(self, color):`  # self - сам объект, который будет создан <br>
+`        self.color = color`  # создаваемому объекту задаем переменную color<br>
 > создание класса
 
 `@dataclass`<br>
@@ -789,6 +789,14 @@
 `    color: str`<br>
 > создание класса с помощью модуля dataclass
 
+`class BookWithWords:`<br>
+`    def __init__(self, color, words: str):`<br>
+`        self.color = color`<br>
+`        self.words = words`<br>
+<br>
+`    def words(self):`<br>
+`        print(self.words)`<br>
+> создание метода — функции, объявленной внутри класса
 
 
 ## Методы теории вероятностей в Python

@@ -798,9 +798,9 @@
 `        print(self.words)`<br>
 > создание метода — функции, объявленной внутри класса
 
-`class VIPBook(Book):`
-`    def paper(self):`
-`        print('shhh-shhh')`
+`class VIPBook(Book):`<br>
+`    def paper(self):`<br>
+`        print('shhh-shhh')`<br>
 > пример наследования класса
 
 

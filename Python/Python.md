@@ -785,7 +785,7 @@
 > создание класса
 
 `@dataclass`<br>
-`class Auto:`<br>
+`class Book:`<br>
 `    color: str`<br>
 > создание класса с помощью модуля dataclass
 
@@ -797,6 +797,11 @@
 `    def words(self):`<br>
 `        print(self.words)`<br>
 > создание метода — функции, объявленной внутри класса
+
+`class VIPBook(Book):`
+`    def paper(self):`
+`        print('shhh-shhh')`
+> пример наследования класса
 
 
 ## Методы теории вероятностей в Python

@@ -96,6 +96,9 @@
 `from df2gspread import df2gspread as d2g`
 > функция используется для экспорта данных из pandas DataFrame в Google Sheets
 
+`from dataclasses import dataclass`  
+> предоставляет декораторы и функции для того, чтобы автоматически добавлять магические (специальные) методы
+
 `import psycopg2`
 > модуль, который позволяет взаимодействовать с базой данных PostgreSQL из Python
 
@@ -771,6 +774,22 @@
 `ax.set_xlabel('Data')`<br>
 `ax.set_ylabel('Values')`<br>
 > позволяет оценить медиану, квартили и размах данных, что может быть полезно при анализе нормальности распределения
+
+## ООП в Python
+
+##### Создание классов
+
+`class Book:`<br>
+`    def __init__(self, color):  # self - сам объект, который будет создан`<br>
+`        self.color = color  # создаваемому объекту задаем переменную color`<br>
+> создание класса
+
+`@dataclass`<br>
+`class Auto:`<br>
+`    color: str`<br>
+> создание класса с помощью модуля dataclass
+
+
 
 ## Методы теории вероятностей в Python
 

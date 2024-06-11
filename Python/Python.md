@@ -144,6 +144,13 @@
 `df = ph.read_clickhouse(query=q, connection=connection_default)`
 > SQL запрос в Python через CLICKHOUSE в пандас (нужно подставить link, заменить звездочки учетными данными, верно указать базу данных и написать корректный запрос)
 
+`conn_uri = "postgresql://postgres:password@localhost/exercises"`<br>
+`df = pd.read_sql(`<br>
+`    "SELECT * FROM cd.bookings",`<br>
+`    conn_uri`<br>
+`)`<br>
+> SQL-запрос через Pandas
+
 `df = pd.read_csv('C:\\temp\\data.csv.zip',  compression='zip')`<br><br>
 `with zipfile.ZipFile('C:\\temp\\data2.csv.zip') as myzip:`<br>
     `with myzip.open('data2.csv') as myfile:`<br>

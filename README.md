@@ -17,3 +17,5 @@
   * [Работа с датафреймами](Python/Python.md#pandas);
   * [Математические методы в Python](Python/Python.md#math);
   * [Статистические методы в Python](Python/Python.md#statistics)
+* [Конспекты по статистике и теории вероятности](syllabus/statistics_probability.md):
+  *[Основные формулы теории вероятностей](syllabus/statistics_probability.md#main_teorver)

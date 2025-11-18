@@ -132,7 +132,92 @@ $$
 C_n^k = \binom{n}{k} = \frac{n!}{k!(n-k)!}
 $$
 
-где:
-- \(n!\) — произведение всех натуральных чисел от \(1\) до \(n\) (факториал);
-- \(k\) — число выбираемых объектов;
-- \(n\) — общее число объектов
+## Операции над событиями и формулы преобразования
+
+### Законы де Моргана
+
+**Первый закон де Моргана** (отрицание объединения):<br><br>
+$$\overline{A \cup B} = \overline{A} \cap \overline{B}$$<br><br>
+*Противоположное событие к сумме событий есть произведение противоположных событий.*<br><br>
+
+**Второй закон де Моргана** (отрицание пересечения):<br><br>
+$$\overline{A \cap B} = \overline{A} \cup \overline{B}$$<br><br>
+*Противоположное событие к произведению событий есть сумма противоположных событий.*<br><br>
+
+### Дистрибутивность операций
+
+**Дистрибутивность пересечения относительно объединения:** <br><br>
+$$A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$$<br><br>
+
+**Дистрибутивность объединения относительно пересечения:** <br><br>
+$$A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$$<br><br>
+
+### Разность событий
+
+**Разность через пересечение с дополнением:** <br><br>
+$$A \setminus B = A \cap \overline{B}$$<br><br>
+
+**Вероятность разности событий:** <br><br>
+$$P(A \setminus B) = P(A) - P(A \cap B)$$<br><br>
+
+### Симметрическая разность
+
+**Определение:** <br><br>
+$$A \triangle B = (A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)$$<br><br>
+
+**Через объединение и пересечение:** <br><br>
+$$A \triangle B = (A \cup B) \cap \overline{(A \cap B)}$$<br><br>
+
+### Представление события через разложение
+
+**Разложение события A по событию B:** <br><br>
+$$A = (A \cap B) \cup (A \cap \overline{B})$$<br><br>
+
+**Вероятность через разложение:** <br><br>
+$$P(A) = P(A \cap B) + P(A \cap \overline{B})$$<br><br>
+
+или через условные вероятности:<br><br>
+$$P(A) = P(A|B) \cdot P(B) + P(A|\overline{B}) \cdot P(\overline{B})$$<br><br>
+
+### Формула включений-исключений
+
+**Для двух событий:** <br><br>
+$$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$<br><br>
+
+**Для трёх событий:** <br><br>
+$$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)$$<br><br>
+
+### Преобразование пересечения в объединение
+
+**Через противоположные события:** <br><br>
+$$A \cap B = \overline{\overline{A} \cup \overline{B}}$$<br><br>
+
+**Для вероятностей (из формулы сложения):** <br><br>
+$$P(A \cap B) = P(A) + P(B) - P(A \cup B)$$<br><br>
+
+### Связь условной и безусловной вероятности
+
+**Теорема умножения:** <br><br>
+$$P(A \cap B) = P(A) \cdot P(B|A) = P(B) \cdot P(A|B)$$<br><br>
+
+### Полезные тождества
+
+**Свойство идемпотентности:** <br><br>
+$$A \cup A = A, \quad A \cap A = A$$<br><br>
+
+**Свойство поглощения:** <br><br>
+$$A \cup (A \cap B) = A, \quad A \cap (A \cup B) = A$$<br><br>
+
+**Коммутативность:** <br><br>
+$$A \cup B = B \cup A, \quad A \cap B = B \cap A$$<br><br>
+
+**Ассоциативность:** <br><br>
+$$(A \cup B) \cup C = A \cup (B \cup C), \quad (A \cap B) \cap C = A \cap (B \cap C)$$<br><br>
+
+**Взаимодействие с достоверным (Ω) и невозможным (∅) событиями:** <br><br>
+$$A \cup \Omega = \Omega, \quad A \cap \Omega = A$$<br><br>
+$$A \cup \emptyset = A, \quad A \cap \emptyset = \emptyset$$<br><br>
+
+**Взаимодействие с противоположным событием:** <br><br>
+$$A \cup \overline{A} = \Omega, \quad A \cap \overline{A} = \emptyset$$<br><br>
+$$\overline{\overline{A}} = A$$<br><br>

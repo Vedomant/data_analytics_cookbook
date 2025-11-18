@@ -221,3 +221,23 @@ $$A \cup \emptyset = A, \quad A \cap \emptyset = \emptyset$$<br><br>
 **Взаимодействие с противоположным событием:** <br><br>
 $$A \cup \overline{A} = \Omega, \quad A \cap \overline{A} = \emptyset$$<br><br>
 $$\overline{\overline{A}} = A$$<br><br>
+
+### Полезные преобразования для условных вероятностей
+
+**Вероятность противоположного события при условии:** <br><br>
+$$P(\overline{A}|B) = 1 - P(A|B)$$<br><br>
+
+**Вероятность объединения при условии:** <br><br>
+$$P(A \cup C|B) = P(A|B) + P(C|B) - P(A \cap C|B)$$<br><br>
+
+**Вероятность пересечения при условии (если A и C независимы при условии B):** <br><br>
+$$P(A \cap C|B) = P(A|B) \cdot P(C|B)$$<br><br>
+
+### Связь между P(A|B) и P(B|A) 
+
+**Симметричное соотношение:** <br><br>
+$$P(A|B) \cdot P(B) = P(B|A) \cdot P(A) = P(A \cap B)$$<br><br>
+
+**Выражение одной через другую:** <br><br>
+$$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$$<br><br>
+$$P(B|A) = \frac{P(A|B) \cdot P(B)}{P(A)}$$<br><br>

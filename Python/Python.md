@@ -813,6 +813,15 @@
 
 ## Методы теории вероятностей в Python
 
+##### Биномиальный коэфициент
+
+`import math`<br>
+`n = 6`<br>
+`k = 2`<br>
+`C_nk = math.factorial(n) / (math.factorial(k) * math.factorial(n - k))`<br>
+`print(C_nk)`<br>
+> число способов выбрать k элементов из n различных элементов без учёта порядка
+
 ##### Формула Бернулли
 
 `import math`<br>

@@ -15,6 +15,7 @@
   * [Работа с множествами](Python/Python.md#set);
   * [Списочные выражения и функции для работы с множествами](Python/Python.md#func);
   * [Работа с датафреймами](Python/Python.md#pandas);
+  * [Методы теории вероятностей в Python](Python/Python.md#teorver);
   * [Математические методы в Python](Python/Python.md#math);
   * [Статистические методы в Python](Python/Python.md#statistics)<br><br>
 * [Конспекты по статистике и теории вероятности](syllabus/statistics_probability.md):
